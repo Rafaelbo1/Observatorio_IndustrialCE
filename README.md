@@ -40,7 +40,7 @@ Após o carregamentos dos dados necessários (tabelas: ____Atracacao.txt e ____T
                     [Nacionalidade do Armador],FlagMCOperacaoAtracacao,Terminal,Município,UF,SGUF,
                     [Região Geográfica],[Nº da Capitania],[Nº do IMO],TEsperaAtracacao,
                     TEsperaInicioOp,TOperacao,TEsperaDesatracacao,TAtracado,TEstadia)
-     Considere o tipo de cada variável, fator importante para o processo de ETL realiado com SQL e python
+     Considere o tipo de cada variável, fator importante para o processo de ETL realizado com SQL e python
      
    6 Após isto é so executar o "main.py" com as bibliotecas necessárias já instaladas.
    
@@ -58,7 +58,7 @@ Após o carregamentos dos dados necessários (tabelas: ____Atracacao.txt e ____T
                     [Percurso Transporte Interiores],STNaturezaCarga,STSH2,STSH4,[Natureza da Carga],
                     Sentido,TEU,QTCarga,VLPesoCargaBruta,Ano,Mês,[Porto Atracação],SGUF,
                     VLPesoCargaConteinerizada)
-     Considere o tipo de cada variável, fator importante para o processo de ETL realiado com SQL e python
+     Considere o tipo de cada variável, fator importante para o processo de ETL realizado com SQL e python
      
    3 Após isto é so executar o "main2.py" com as bibliotecas necessárias já instaladas.
    
