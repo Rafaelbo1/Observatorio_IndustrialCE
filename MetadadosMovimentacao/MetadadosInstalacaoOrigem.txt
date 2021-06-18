@@ -1,0 +1,13 @@
+﻿Atributo;Descrição
+Origem;Código do porto de origem da carga (porto de embarque). Ligação com a tabela de carga. Disponível para consulta na página: web.antaq.gov.br/portalv3/sdpv2servicosonline/ConsultarPorto.aspx
+Origem Nome;Nome do porto de origem da carga, segundo tabela disponível para consulta na página:  web.antaq.gov.br/portalv3/sdpv2servicosonline/ConsultarPorto.aspx.
+CDBigramaOrigem;Código bigrama do país do porto de origem da carga, segundo tabela disponível para consulta na página:  web.antaq.gov.br/portalv3/sdpv2servicosonline/ConsultarPorto.aspx.
+CDTrigramaOrigem;Se porto público ou internacional, código trigrama do país do porto de origem da carga, segundo tabela disponível para consulta na página:  web.antaq.gov.br/portalv3/sdpv2servicosonline/ConsultarPorto.aspx.
+CDTUPOrigem;Utilizado para porto privado, código da instalação portuária de origem da carga, segundo tabela disponível para consulta na página: web.antaq.gov.br/portalv3/sdpv2servicosonline/ConsultarInstalacaoPortuaria.aspx
+Rio Origem;Se porto for fluvial, nome do rio onde está o porto. Não se aplica a portos marítimos.
+Região Hidrográfica Origem;Nome da região hidrográfica do porto de origem da carga. Não se aplica a portos marítimos.
+UF.Origem;Sigla da UF do porto de origem da carga.
+Cidade Origem;Nome da cidade do porto de origem da carga. Se o porto de país estrangeiro, atributo preenchido com hífen (-).
+País Origem;Nome do país do porto de origem da carga.
+Continente Origem;Nome do continente do porto de origem da carga.
+BlocoEconomico_Origem;Nome do bloco econômico do porto de origem da carga.

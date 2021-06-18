@@ -1,0 +1,4 @@
+﻿Atributo;Descrição
+IDCarga;Código de identificação da carga. Ligação com a tabela de carga.
+CDMercadoriaConteinerizada;Classificação Nomenclatura Comum do Mercosul (código NCM SH4) para mercadorias informadas dentro do contêiner. Contém os quatros primeiros dígitos do código do NCM referente a posição do Sistema Harmonizado (SH). Códigos de mercadoria disponíveis para consulta na página: web.antaq.gov.br/portalv3/sdpv2servicosonline/ConsultarMercadoria.aspx
+VLPesoCargaConteinerizada;Peso líquido da carga conteinerizada, em toneladas.

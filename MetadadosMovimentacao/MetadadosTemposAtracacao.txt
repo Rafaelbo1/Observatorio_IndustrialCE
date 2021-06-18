@@ -1,0 +1,8 @@
+﻿Atributo;Descrição
+IDAtracacao;Código de identificação da atracação. Ligação com a tabela de atracação.
+TEsperaAtracacao;T1 (horas) - É definido como sendo a diferença entre a data/hora de atracação do navio e a data/hora de chegada do mesmo à área de fundeio. Inclui o tempo de viagem pelo canal de acesso e eventual tempo de espera para atracação do navio.
+TEsperaInicioOp;T2 (horas) - É definido como sendo a diferença entre a data/hora de início de operação do navio e a data/hora de atracação deste. Trata-se do tempo em que o navio, já atracado, espera para que se inicie a operação de carga/descarga.
+TOperacao;T3 (horas) - É definido como sendo a diferença entre a data/hora de término da operação do navio e a data/hora de início dessa operação. Este é o tempo que se usa para calcular a Prancha Média Operacional (PMO).
+TEsperaDesatracacao;T4 (horas) - É definido como sendo a diferença entre a data/hora de desatracação do navio e a data/hora de término da operação. Trata-se do tempo em que o navio aguarda no berço até a sua desatracação, para iniciar a viagem de saída da instalação portuária.
+TAtracado;TA (horas) - É definido como a soma de todos os tempos onde a embarcação permaneceu no berço da instalação portuária, ou seja, TA = T2 + T3 + T4. Este é o tempo que se usa para calcular a Prancha Média Geral (PMG).
+TEstadia;"TE (horas) - É definido como a soma de todos os tempos desde a chegada do navio na área de fundeio até a sua desatracação do berço, ou seja, TE = T1 + T2 + T3 + T4.'"

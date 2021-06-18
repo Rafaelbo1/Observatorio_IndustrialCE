@@ -1,0 +1,25 @@
+﻿Atributo;Descrição
+IDAtracacao;Código de identificação da atracação.
+CDTUP;"Código de identificação do porto informante (Porto Público: Bigrama+Trigrama; Porto Privado: Código da Antaq - BR+UF+xxx), disponível para consulta na página: web.antaq.gov.br/portalv3/sdpv2servicosonline/ConsultarPorto.aspx."
+IDBerco;Código de identificação do berço do porto informante.
+Berço;Nome do berço do porto informante.Local da atracação (berço) do porto informante, cadastrado previamente na base da Antaq.  Códigos de berços disponíveis para consulta na página:web.antaq.gov.br/portalv3/sdpv2servicosonline/ConsultarBerco.aspx
+Porto Atracação;Nome do porto informante.
+Apelido Instalação Portuária;Apelido do porto informante.
+Complexo Portuário;Complexo Portuário do porto informante.
+Tipo da Autoridade Portuária;Tipo de autoridade portuária do porto informante, que pode ser Porto Público ou Porto Privado.
+Data Atracação;Data e hora de atracação da embarcação no porto (yyyy-MM-dd hh:mm:ss).
+Data Chegada;Data e hora de chegada da embarcação no porto  (yyyy-MM-dd hh:mm:ss).
+Data Desatracação;Data e hora de desatracação da embarcação no porto (yyyy-MM-dd hh:mm:ss).
+Data Início Operação;Data e hora de início da Operação (yyyy-MM-dd hh:mm:ss).
+Data Término Operação;Data e hora de término da operação (yyyy-MM-dd hh:mm:ss).
+Tipo de Operação;Tipo de operação (finalidade) da atracação: Movimentação da Carga (1), Passageiro (2), Apoio (3), Marinha (4), Abastecimento (5), Reparo/Manutenção (6), Misto (7) ou Retirada de Resíduos (8).
+Tipo de Navegação da Atracação;Tipo de navegação da embarcação: Navegação Interior (1), Apoio Portuário (2), Cabotagem (3), Apoio Marítimo (4) ou Longo Curso (5).
+Nacionalidade do Armador;Nacionalidade Armador: Brasileira (1) e Estrangeira (2).
+FlagMCOperacaoAtracacao;Se for igual a 1, identifica que a atracação é contabilizada como movimentação de carga.
+Terminal;Se o tipo de autoridade portuária do porto informante for Porto Público, será informado o terminal arrendado ou público onde ocorreu a atracação.
+Município;Município do porto informante
+UF;Nome da unidade da federação do porto informante
+SGUF;Sigla da unidade da federação do porto informante
+Região Geográfica;Nome da região hidrográfica do porto informante.
+Nº da Capitania;Código atribuído pela Capitania dos Portos do Brasil. Utilizado quando a embarcação não possuir número IMO.
+Nº do IMO;Número da International Maritime Organization (IMO) atribuído à embarcação.

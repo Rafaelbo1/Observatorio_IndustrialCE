@@ -1,0 +1,4 @@
+﻿Atributo;Descrição
+IDCarga;Código de identificação da carga. Ligação com a tabela de carga.
+Região Hidrográfica;Nome da região hidrográfica onde foi realizado o transporte de carga.
+ValorMovimentado;Peso transportado em toneladas.

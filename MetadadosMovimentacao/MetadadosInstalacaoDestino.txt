@@ -1,0 +1,13 @@
+﻿Atributo;Descrição
+Destino;Código do porto de destino da carga (porto de desembarque). Ligação com a tabela de carga. Disponível para consulta na página: web.antaq.gov.br/portalv3/sdpv2servicosonline/ConsultarPorto.aspx
+Nome Destino;Nome do porto de destino da carga, segundo tabela disponível para consulta na página:  web.antaq.gov.br/portalv3/sdpv2servicosonline/ConsultarPorto.aspx.
+CDBigramaDestino;Código bigrama do país do porto de destino da carga, segundo tabela disponível para consulta na página:  web.antaq.gov.br/portalv3/sdpv2servicosonline/ConsultarPorto.aspx.
+CDTrigramaDestino;Se porto público ou internacional, código trigrama do país do porto de destino da carga, segundo tabela disponível para consulta na página:  web.antaq.gov.br/portalv3/sdpv2servicosonline/ConsultarPorto.aspx.
+CDTUPDestino;Utilizado para porto privado, código da instalação portuária de destino da carga, segundo tabela disponível para consulta na página: web.antaq.gov.br/portalv3/sdpv2servicosonline/ConsultarInstalacaoPortuaria.aspx
+Rio Destino;Se porto for fluvial, nome do rio onde está o porto. Não se aplica a portos marítimos.
+Região Hidrográfica Destino;Nome da região hidrográfica do porto de destino da carga. Não se aplica a portos marítimos.
+UF.Destino;Sigla da UF do porto de destino da carga.
+Cidade Destino;Nome da cidade do porto de destino da carga. Se o porto de país estrangeiro, atributo preenchido com hífen (-).
+País Destino;Nome do país do porto de destino da carga.
+Continente Destino;Nome do continente do porto de destino da carga.
+BlocoEconomico_Destino;Nome do bloco econômico do porto de destino da carga.
