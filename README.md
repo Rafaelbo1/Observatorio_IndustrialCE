@@ -3,9 +3,14 @@
 
 ### Questão 1a):
 
-   A decisão de utilização estratégica relacionada a ciência de dados quanto a utilização de um  data lake é diferente da decisão de mesmo fim para o uso do SQL, uma vez que ambos os tipos de bancos de dados podem ser usados em conjunto para produzir os melhores resultados possíveis.
+   A decisão de utilização estratégica relacionada a ciência de dados quanto a utilização de um  data lake é diferente da decisão de mesmo fim para o uso do SQL, uma vez que ambos os tipos de tecnologia em bancos de dados podem ser usados em conjunto para produzir os melhores resultados possíveis.
+   
    Olhando para os dados disponibilizados pode-se perceber que a melhor opção de utilização é um banco de dados SQL. Apesar de ter-se muita dados categóricos, o que possibilitaria o uso de um NoSQL, os principais objetivos requeridos são de tratamentos de dados para obter valores int (inteiros) ou flaot(reais) que produzam respostas, insights, ideação, etc, para a otimização de tomadas de decisões a nível operacional, tático e estratégico para as organizações envolvidos.
-   Por fim, recomenda-se o uso do SQL e o investimento em um Data lake, o que favorecerá os resultados do time de data science, engenheiros de machine  e engenheiro de dados, como já utilizam diversas empresas no mercado, as quais tem obtido bons resultados com estas tecnologias.
+   
+   Por fim, recomenda-se o uso do SQL e o investimento em um Data lake, o que favorecerá os resultados do time de data science, engenheiros de machine learning e engenheiro de dados, como já utilizam diversas empresas no mercado, as quais tem obtido bons resultados com estas tecnologias.
+
+
+_______________________________________________________________________________________
 
 Para as atividade a seguir, disponibilizei um conjunto de bibliotecas/funções naturais de Python que contribuem para o desenvolvimento do que foi solicitado. As bibliotecas estão no requirements.txt
 As funções desenvolvidas para uso nos scripts que geram as respostas estão no arquivo functons.py
