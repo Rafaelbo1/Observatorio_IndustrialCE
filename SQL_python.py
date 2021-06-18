@@ -1,11 +1,19 @@
 import pandas as pd
 import functions as f
 
+
+#Conecção com o SQL Server
 cnxn = f.connection()
 cursor = cnxn.cursor()
+
+#Carregando a tabela atracacao_fato do SQL Server
 df = pd.read_sql(" select * from atracacao_fato ", cnxn)
+
+#Finalização da conexão com SQL Server
 cnxn.close()
 
+
+#Contruindo a tabela com dos dados do Ceará
 df_CE = df.loc[df['SGUF'] == 'CE']
 df_natrac=df_CE.groupby(['Mês','Ano','SGUF'])['IDAtracacao'].count()
 df_natrac=  df_natrac.to_frame().reset_index()
@@ -24,11 +32,13 @@ tabela_ceara = tabela_ceara.rename(columns={'SGUF': 'Localidade'})
 tabela_ceara = tabela_ceara.reindex(columns=['Localidade','Número de Atracações',
                                              'Tempo de espera médio','Tempo atracado médio',
                                              'Mês','Ano'])
-
+#Salvando tabela
 writer = pd.ExcelWriter('tabela_ceara.xlsx')
 tabela_ceara.to_excel(writer)
 writer.save()
 
+
+#Contruindo a tabela com dos dados do Nordeste
 df_ND = df.loc[df['Região Geográfica'] == 'Nordeste']
 df_natrac=df_ND.groupby(['Mês','Ano','Região Geográfica'])['IDAtracacao'].count()
 df_natrac=  df_natrac.to_frame().reset_index()
@@ -48,11 +58,15 @@ tabela_Ndeste = tabela_Ndeste.reindex(columns=['Localidade','Número de Atracaç
                                              'Tempo de espera médio','Tempo atracado médio',
                                              'Mês','Ano'])
 
+#Salvando tabela
 writer = pd.ExcelWriter('tabela_Ndeste.xlsx')
 tabela_Ndeste.to_excel(writer)
 writer.save()
 
 
+
+
+#Contruindo a tabela com dos dados do Brasil
 df_natrac=df.groupby(['Mês','Ano'])['IDAtracacao'].count()
 df_natrac=  df_natrac.to_frame().reset_index()
 
@@ -71,6 +85,7 @@ tabela_BR = tabela_BR.reindex(columns=['Localidade','Número de Atracações',
                                              'Tempo de espera médio','Tempo atracado médio',
                                              'Mês','Ano'])
 
+#Salvando tabela
 writer = pd.ExcelWriter('tabela_BR.xlsx')
 tabela_BR.to_excel(writer)
 writer.save()

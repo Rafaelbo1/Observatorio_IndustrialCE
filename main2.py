@@ -1,15 +1,20 @@
 import functions as f
 import pandas as pd
 
+#Carregando os dados
 df_Carga_Conteinerizada = f.dados('Carga_Conteinerizada')
 df_carga = f.dados('Carga')
 df_atracacao = f.dados('Atracacao')
 
+#Construção da tabela atracacao_fato
 table_Carga = f.carga_fato(df_carga,df_atracacao,df_Carga_Conteinerizada)
+#Preparação para envio de null para o SQL
 table_Carga = table_Carga.where(pd.notnull(table_Carga), None)
 
+#Conecção com o SQL Server
 cnxn = f.connection()
 cursor = cnxn.cursor()
+
 # Inserir Dataframe no SQL Server:
 for index, row in table_Carga.iterrows():
     try:
@@ -31,8 +36,12 @@ for index, row in table_Carga.iterrows():
                     row.Natureza_da_Carga,row.Sentido,row.TEU,row.QTCarga,row.VLPesoCargaBruta,row.Ano,
                     row.Mes,row.Porto_Atracação,row.SGUF,row.VLPesoCargaConteinerizada)
         #print(f"Registro inserido com sucesso: {index}")
+
+    # Tratando os erros de envio
     except Exception as e:
         print(f"Não foi possível inserir o registro {index}. O erro encontrado foi: {e}")
         break
+
+#Finalização da conexão com SQL Server
 cnxn.commit()
 cursor.close()
